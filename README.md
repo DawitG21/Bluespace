@@ -3,7 +3,7 @@ blueSpaceApp allows you to signup for premier work-spaces and events, whether yo
 
 Developed using Typescript, CSS3, HTML 5 and .NET CORE REST API.
 The app can perfom all the CRUD operations-for creating, reading, updating and deleting various components(workspaces,events,services etc). For the backend, 
-I am using a REST WEB service-http://185.136.165.131/apidoc/.
+I am using a REST WEB service.
 
 This project was generated with [Ionic CLI](https://ionicframework.com/docs/cli/) version 4.2.1.
 
@@ -17,3 +17,4 @@ Start the server using command -  `ionic serve(for browser view)` or `ionic lab(
 2. Install node_modules package e.g `npm -i`
 3. Install ion-text-avatar e.g `npm install --save ionic-text-avatar`
 4. Run the project using command `ionic serve(for browser view)` or `ionic lab(for mobile view)`
+                 *NOTE: YOU WILL NEED TO REGISTER OR CREATE ACCOUNT TO USE THIS APP*
