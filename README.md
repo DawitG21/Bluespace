@@ -18,13 +18,13 @@ Start the server using command -  `ionic serve(for browser view)` or `ionic lab(
 3. Install ion-text-avatar e.g `npm install --save ionic-text-avatar`
 4. Make sure you add IonTextAvatar to the declarations array of your app.module.ts e.g
 
-`import { IonTextAvatar } from 'ionic-text-avatar';
+`import { IonTextAvatar } from 'ionic-text-avatar';`
 
-@NgModule({
-  declarations: [
-    IonTextAvatar
-  ]
-})
-export class AppModule {}`
+`@NgModule({`
+  `declarations: [`
+    `IonTextAvatar`
+  `]`
+`})`
+`export class AppModule {}`
 
 5. Run the project using command `ionic serve(for browser view)` or `ionic lab(for mobile view)`
