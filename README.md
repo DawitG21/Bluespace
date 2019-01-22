@@ -11,20 +11,9 @@ This project was generated with [Ionic CLI](https://ionicframework.com/docs/cli/
 
 Start the server using command -  `ionic serve(for browser view)` or `ionic lab(for mobile view)`.
 
-## Steps to setup Ionic project 
+## Steps to setup blueSpace Ap
 
-1. Create an Ionic CLI project
-2. Install node_modules e.g `npm -i`
+1. Open the downloaded blueSpace app
+2. Install node_modules package e.g `npm -i`
 3. Install ion-text-avatar e.g `npm install --save ionic-text-avatar`
-4. Make sure you add IonTextAvatar to the declarations array of your app.module.ts e.g
-
-`import { IonTextAvatar } from 'ionic-text-avatar';`
-
-`@NgModule({`
-  `declarations: [`
-    `IonTextAvatar`
-  `]`
-`})`
-`export class AppModule {}`
-
-5. Run the project using command `ionic serve(for browser view)` or `ionic lab(for mobile view)`
+4. Run the project using command `ionic serve(for browser view)` or `ionic lab(for mobile view)`
