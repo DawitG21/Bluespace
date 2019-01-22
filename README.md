@@ -13,7 +13,7 @@ Start the server using command -  `ionic serve(for browser view)` or `ionic lab(
 
 ## Steps to setup blueSpace Ap
 
-1. Open the downloaded blueSpace app
+1. Open the downloaded blueSpace app folder
 2. Install node_modules package e.g `npm -i`
 3. Install ion-text-avatar e.g `npm install --save ionic-text-avatar`
 4. Run the project using command `ionic serve(for browser view)` or `ionic lab(for mobile view)`
