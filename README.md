@@ -1,5 +1,5 @@
-# BluespaceApp
-blueSpaceApp allows you to signup for premier work-spaces and events, whether you need a pass for a day, a dedicated desk for your business, or an office suite for your entire company.
+## WorkspaceApp
+This app allows you to signup for premier work-spaces and events, whether you need a pass for a day, a dedicated desk for your business, or an office suite for your entire company.
 
 Developed using Typescript, CSS3, HTML 5 and .NET CORE REST API.
 The app can perfom all the CRUD operations-for creating, reading, updating and deleting various components(workspaces,events,services etc). For the backend, 
