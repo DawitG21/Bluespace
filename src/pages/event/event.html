@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<ion-header>
+    <ion-navbar color="bluespace">
+        <ion-title>
+            Event
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-card>
+        <img src="../../assets/imgs/event2.jpg"/>
+        <ion-card-content>
+          <ion-card-title>
+            {{Event.description}}
+            </ion-card-title>
+          <p>
+            From : {{Event.start | date : 'MMM d, y, h:mm:ss a'}}<br>
+            To : {{Event.end | date : 'MMM d, y, h:mm:ss a'}}
+            {{Event.category}} Event<br>
+            <ion-icon name="pin">     Bole Grace Plaza</ion-icon>
+          </p>
+        </ion-card-content>
+      </ion-card>
+</ion-content>

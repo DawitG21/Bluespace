@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<ion-content padding class="homepage-picture">
+  <div class="logo-div">
+    <img src="../../assets/imgs/blueSpace_icon.png" />
+  </div>
+  <ion-item class="rounded-fields" no-lines>
+    <ion-label><img src="../../assets/imgs/envelope.png"></ion-label>
+    <ion-input type="text" placeholder="Email     " class="text-input" text-center [(ngModel)]="user.email"></ion-input>
+  </ion-item>
+  <ion-item class="rounded-fields" no-lines>
+    <ion-label><img src="../../assets/imgs/password.png"></ion-label>
+    <ion-input type="password" placeholder="Password" text-center item-right [(ngModel)]="user.password">
+      <ion-icon name="eye"></ion-icon>
+    </ion-input>
+  </ion-item>
+  <!-- <button ion-button clear class="forget-password">Forget Password?</button> -->
+  <button ion-button round full large class="round-buttons" (click)="login()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login</button>
+  <div class="signup-div" (click)="toSignupPage()">
+    <p class="logo-text">Not a member? Join today</p>
+  </div>
+</ion-content>

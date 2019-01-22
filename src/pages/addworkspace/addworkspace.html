@@ -1,0 +1,77 @@
+<!Doctype html>
+<ion-header>
+  <ion-navbar color="bluespace">
+    <ion-title>Suscribe</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="card">
+    <img src="../../assets/imgs/workspace.png">
+
+    <ion-item>
+      <ion-label class="label">Office Type</ion-label>
+    </ion-item>
+
+    <ion-segment [(ngModel)]="space">
+      <ion-segment-button value="hot">HotDesk</ion-segment-button>
+      <ion-segment-button value="ded">Dedicated</ion-segment-button>
+      <ion-segment-button value="close">Enclosed</ion-segment-button>
+    </ion-segment>
+
+    <div [ngSwitch]="space" style="margin-top: 4.5%">
+
+      <ion-list *ngSwitchCase="'hot'">
+        <ion-item>
+          <ion-label class="label">Workspace</ion-label>
+          <ion-select name="passType" [(ngModel)]="docs.workspaceCategory">
+            <ion-option value="student">Student Pass</ion-option>
+            <ion-option value="ten">10 Days Pass</ion-option>
+            <ion-option value="twenty">20 Days Pass</ion-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label class="label">From</ion-label>
+          <ion-input type="datetime-local" [(ngModel)]="docs.start" name="start"></ion-input>
+        </ion-item><br>
+        <button ion-button block round (click)="onBuy()" color="orangespace">SIGN UP</button>
+      </ion-list>
+
+      <ion-list *ngSwitchCase="'ded'">
+        <ion-item>
+          <ion-label class="label">Workspace</ion-label>
+          <ion-select [(ngModel)]="docs.workspaceCategory" name="workspaceCategory">
+            <ion-option value="001">dedicated</ion-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label class="label">Duration</ion-label>
+          <ion-input type="number" min="1" [(ngModel)]="docs.duration" name="duration"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label class="label">From</ion-label>
+          <ion-input type="datetime-local" [(ngModel)]="docs.start" name="start"></ion-input>
+        </ion-item><br>
+        <button ion-button block round (click)="onBuy()" color="orangespace">SIGN UP</button>
+      </ion-list>
+
+      <ion-list *ngSwitchCase="'close'">
+        <ion-item>
+          <ion-label class="label">Enclosed Workspace</ion-label>
+          <ion-select [(ngModel)]="docs.workspaceCategory" name="workspaceCategory">
+            <ion-option value="001">enclosed</ion-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label class="label">Duration</ion-label>
+          <ion-input type="number" min="1" [(ngModel)]="docs.duration" name="duration"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label class="label">From</ion-label>
+          <ion-input type="datetime-local" [(ngModel)]="docs.start" name="start"></ion-input>
+        </ion-item><br>
+        <button ion-button block round (click)="onBuy()" color="orangespace">SIGN UP</button>
+      </ion-list>
+    </div>
+  </ion-card>
+</ion-content>

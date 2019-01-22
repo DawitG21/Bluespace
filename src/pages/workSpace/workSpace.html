@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<ion-header>
+  <ion-navbar color="bluespace" hideBackButton> 
+      <ion-buttons left>
+          <button ion-button (click)="goBack()">
+            <ion-icon class="customIcon" name="arrow-back"></ion-icon>
+          </button>
+        </ion-buttons>  
+    <ion-title>
+      WorkSpaces
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list class="content">
+    <ng-container *ngFor="let docs of docs?.docs">      
+      <ion-item (tap)="presentActionSheet(docs)">
+        <ion-avatar item-start>
+          <!-- <img src="../../assets/imgs/workspace.png"> -->
+          <ion-text-avatar [ngStyle]="getRandomColor()">
+            {{ docs?.passType | uppercase | slice:0:2 }}
+           </ion-text-avatar>
+        </ion-avatar>
+        <h2><a href="#">{{ docs?.passType | uppercase }}</a></h2>
+        <div class="main">
+          <div class="left">
+            <p>
+              <ion-icon name="calendar" color="bluespace"></ion-icon>&nbsp;From: {{ docs?.start | date: 'dd-MM-yyyy' }}
+            </p>
+          </div>
+          <div class="right">
+            <p>To: {{ docs?.end | date: 'dd-MM-yyyy' }}
+            </p>
+          </div>
+        </div>
+      </ion-item>           
+    </ng-container>
+  </ion-list>
+
+  <ion-fab bottom right>
+    <button ion-fab mini color="orangespace" (click)="addWorkSpace()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-fab>
+</ion-content>

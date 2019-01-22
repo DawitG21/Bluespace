@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<ion-header>
+  <ion-toolbar color="bluespace">
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+      <ion-title>Live Where You Work</ion-title>
+    </button>
+    <button ion-button icon-only class="infoposition">
+      <ion-icon ios="ios-notifications" md="md-notifications"></ion-icon>
+    </button>
+    <button ion-button icon-only class="infoposition2" (click)="presentModal()">
+      <ion-icon ios="ios-barcode" md="md-barcode"></ion-icon>
+    </button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-menu [content]="content" color="bluespace">
+  <ion-header>
+    <ion-toolbar class="menuheader">
+      <img src="../assets/imgs/blueSpace_icon.png" class="logo">
+      <h2>Blue Space</h2>
+      <p>Live Where you work</p>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <div style="color : #3DBCC0; width:100%; height : 100%">
+      <ion-list>
+
+        <button ion-item (click)="openHome()" color="bluespace" menuClose>
+          <ion-icon name="home" item-start color style="color: #f4f4f4"></ion-icon>
+          Home
+        </button>
+
+        <button ion-item (click)="openGuest()" color="bluespace" menuClose>
+          <ion-icon name="people" item-start color style="color: #f4f4f4"></ion-icon>
+          Guest
+        </button>
+        <button ion-item (click)="openRequestatour()" color="bluespace" menuClose>
+          <ion-icon name="compass" item-start style="color: #f4f4f4"></ion-icon>
+          Request a tour
+        </button>
+        <button ion-item (click)="openHowtousetheapp()" color="bluespace" menuClose>
+          <ion-icon name="help-circle" item-start style="color: #f4f4f4"></ion-icon>
+          How to use the app
+        </button>
+        <button ion-item (click)="openSettings()" color="bluespace" menuClose>
+          <ion-icon name="settings" item-start style="color: #f4f4f4"></ion-icon>
+          Settings
+        </button>
+        <button ion-item (click)="openAbout()" color="bluespace" menuClose>
+          <ion-icon name="bookmark" item-start style="color: #f4f4f4"></ion-icon>
+          About
+        </button>
+        <button ion-item (click)="openSignOut()" color="bluespace" menuClose>
+          <ion-icon name="exit" item-start style="color: #f4f4f4"></ion-icon>
+          Sign Out
+        </button>
+      </ion-list>
+    </div>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #content></ion-nav>
+
+<ion-content>
+  <div class="slide-container">
+    <div class="effect slide">
+      <img src="../../assets/imgs/11.jpg">
+    </div>
+    <div class="effect slide">
+      <img src="../../assets/imgs/22.jpg">
+    </div>
+    <div class="effect slide">
+      <img src="../../assets/imgs/33.jpg">
+    </div>
+    <div class="effect slide">
+      <img src="../../assets/imgs/44.jpg">
+    </div>
+  </div>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card text-center padding color="one">
+          <button>
+            <ion-icon name="contact"></ion-icon>
+            <h2>Account</h2>
+          </button>
+        </ion-card>
+      </ion-col>
+
+      <ion-col>
+        <ion-card text-center padding color="two">
+          <button>
+            <ion-icon name="person"></ion-icon>
+            <h2>Blue Face</h2>
+          </button>
+        </ion-card>
+      </ion-col>
+
+    </ion-row><ion-row>
+      <ion-col col-6>
+        <ion-card text-center padding color="three" (click)="toEventsPage()">
+          <button>
+            <ion-icon name="calendar"></ion-icon>
+            <h2>Events</h2>
+          </button>
+        </ion-card>
+      </ion-col>
+
+      <ion-col col-6>
+        <ion-card text-center padding color="four">
+          <button>
+            <ion-icon name="people"></ion-icon>
+            <h2>Community</h2>
+          </button>
+        </ion-card>
+      </ion-col>
+
+    </ion-row><ion-row>
+      <ion-col>
+        <ion-card text-center padding color="five" (click)="toWorkspacePage()">
+          <button>
+            <ion-icon name="person"></ion-icon>
+            <h2>WorkSpace</h2>
+          </button>
+        </ion-card>
+      </ion-col>
+
+      <ion-col>
+        <ion-card text-center padding color="six">
+          <button>
+            <ion-icon name="logo-buffer"></ion-icon>
+            <h2>Services</h2>
+          </button>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+    <ion-row>
+      <ion-col col-6>
+        <ion-card text-center padding color="seven">
+          <button>
+            <ion-icon name="pin"></ion-icon>
+            <h2>Location</h2>
+          </button>
+        </ion-card>
+      </ion-col>
+
+      <ion-col col-6>
+        <ion-card text-center padding color="eight">
+          <button>
+            <ion-icon name="logo-reddit"></ion-icon>
+            <h2>Support</h2>
+          </button>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

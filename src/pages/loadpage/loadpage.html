@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<ion-content>
+  <ion-slides pager (ionSlideDidChange)="changeSlide()">
+
+    <ion-slide>
+      <div class="slideone">
+        <ion-card class="cardslide">
+          <img src="../../assets/imgs/deekay.gif">
+        </ion-card>
+      </div>
+      <div>
+        <ion-label color="bluespace">
+          <h2>Welcome to blueSpace</h2>
+        </ion-label>
+        <p>Where work meets life, with a full range of amenities and services that
+          will make it possible.</p>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="slideone">
+        <ion-card class="cardslide">
+          <img src="../../assets/imgs/12.gif">
+        </ion-card>
+      </div>
+      <div>
+        <ion-label color="bluespace">
+          <h2>Space Matters</h2>
+        </ion-label>
+        <p>BlueSpace offers you a premier workspace experience, whether you need a pass for a day, a dedicated desk for
+          your business, or an office suite for your entire company.</p>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="slideone">
+        <ion-card class="cardslide">
+          <img src="../../assets/imgs/desk-loop.gif">
+        </ion-card>
+      </div>
+      <div>
+        <ion-label color="bluespace">
+          <h2>Host events in style</h2>
+        </ion-label>
+        <p>We offer inspiring unique spaces and customized event planning, from the right lighting, branding, décor,
+          floral, AV, and catering, with meticulous attention to every detail.</p>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="slideone">
+        <ion-card class="cardslide">
+          <img src="../../assets/imgs/team.gif">
+        </ion-card>
+      </div>
+      <div>
+        <ion-label color="bluespace">
+          <h2>Amenities and Services</h2>
+        </ion-label>
+        <p>Manage your workspace, Book meeting rooms, Schedule a massage, Reserve gym time,
+          Book legal business consultation and much more.</p>
+      </div>
+    </ion-slide>
+
+  </ion-slides>
+
+  <button (click)="skipSlides()" class="skipSlide">{{ description }}</button>
+
+</ion-content>

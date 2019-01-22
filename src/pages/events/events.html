@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<ion-header>
+  <ion-navbar color="bluespace">
+    <ion-title>
+      Events
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="card-background-page">
+  <ion-fab right bottom (click)="toAddEventPage()">
+    <button ion-fab mini>
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-fab>
+  <ng-container *ngFor="let E of events?.docs">
+    <ion-card (click)="showEvent(E)">
+      <img src="../../assets/imgs/event2.jpg" />
+      <ion-card-content>
+        <ion-card-title>
+          {{E.description}}
+        </ion-card-title>
+        <p>
+          {{E.start | date : 'MMM d, y, h:mm:ss a'}}
+        </p>
+      </ion-card-content>
+    </ion-card>
+  </ng-container>
+</ion-content>

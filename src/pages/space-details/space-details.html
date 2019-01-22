@@ -1,0 +1,44 @@
+<!Doctype html>
+<ion-header>
+  <ion-navbar color="bluespace">
+      <ion-buttons left>
+          <button ion-button (click)="goBack()">
+            <ion-icon class="customIcon" name="arrow-back"></ion-icon>
+          </button>
+        </ion-buttons>
+    <ion-title>Workspace Details</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card class="card">
+    <img src="../../assets/imgs/workspace.png">
+
+    <ion-list>      
+        <ion-item>
+          <ion-label class="centered"><b>{{docs.passType | uppercase}}</b></ion-label>          
+        </ion-item>        
+
+        <ion-label class="centered"><b>Included in this Space:</b></ion-label>
+
+        <ion-item class="centered">
+          <p>Business address registration</p>          
+          <p>Printing at subsidised rates</p>
+          <p>Fast and secure internet</p>
+          <p>Daily bunna ceremony</p>
+          <p>Meal delivery</p>
+        </ion-item>
+
+        <ion-item>
+          <ion-label><ion-icon name="calendar" color="bluespace"></ion-icon>&nbsp;<b>From:</b>&nbsp;{{ docs.start | date: 'dd-MM-yyyy' }}</ion-label> 
+          <ion-label><ion-icon name="calendar" color="six"></ion-icon>&nbsp;<b>To:</b>&nbsp;{{ docs.end | date: 'dd-MM-yyyy' }}</ion-label>          
+        </ion-item>
+        
+        <ion-item>
+          <ion-label class="centered"><b>Status:</b>&nbsp;{{ docs.approved | uppercase }}</ion-label>          
+        </ion-item>
+      
+    </ion-list>
+    <button ion-button block round (click)="updateModal(docs)" color="six">RENEW PACKAGE</button>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Signup
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content class="homepage-picture" padding>
+    <ion-list>
+        <ion-item class="transparent-item">
+            <ion-input type="text" placeholder="First Name" [(ngModel)]="User.firstName"></ion-input>
+        </ion-item>
+        <ion-item class="transparent-item">
+            <ion-input type="text" placeholder="Last Name" [(ngModel)]="User.lastName"></ion-input>
+        </ion-item>
+        <ion-item class="transparent-item">
+            <ion-input type="text" placeholder="Email" [(ngModel)]="User.email"></ion-input>
+        </ion-item>
+        <ion-item class="transparent-item">
+            <ion-input type="text" placeholder="Phone Number" [(ngModel)]="User.phone"></ion-input>
+        </ion-item>
+        <ion-item class="transparent-item">
+            <ion-input type="password" placeholder="Password" [(ngModel)]="User.password"></ion-input>
+        </ion-item>
+        <ion-item class="transparent-item">
+            <ion-input type="password" placeholder="Confirm Password" [(ngModel)]="confirmPassword"></ion-input>
+        </ion-item>
+    </ion-list>
+    <button ion-button round full large class="round-buttons" (click)="signUp()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save</button>
+</ion-content>

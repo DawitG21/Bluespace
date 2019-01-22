@@ -1,0 +1,7 @@
+{
+  "name": "bluespace",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

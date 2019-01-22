@@ -1,0 +1,36 @@
+<!Doctype html>
+<ion-header>
+  <ion-navbar color="bluespace">
+      <ion-buttons left>
+          <button ion-button (click)="goBack()">
+            <ion-icon class="customIcon" name="arrow-back"></ion-icon>
+          </button>
+        </ion-buttons>
+    <ion-title>Workspace Renewal</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="card">
+    <img src="../../assets/imgs/workspace.png">
+
+    <ion-list>      
+        <ion-item>
+          <ion-label class="centered"><b>Workspace</b></ion-label>
+          <ion-input type="text" [(ngModel)]="docs.passType" name="passType" readonly></ion-input>
+        </ion-item>        
+
+        <ion-item>
+          <ion-label><b>From:</b></ion-label>
+          <ion-input type="datetime-local" [(ngModel)]="docs.start" name="start"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label><b>To:</b></ion-label>
+          <ion-input type="datetime-local" [(ngModel)]="docs.end" name="end"></ion-input>
+        </ion-item>
+             
+    </ion-list>
+    <button ion-button block round (click)="updatePackage()" color="orangespace">RENEW</button>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<ion-header>
+    <ion-navbar color="bluespace">
+        <ion-title>
+            Add Event
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-item>
+        <ion-label>Category</ion-label>
+        <ion-select [(ngModel)]="Event.category">
+            <ion-option name="public" value="public">Public</ion-option>
+            <ion-option name="private" value="private">Private</ion-option>
+        </ion-select>
+    </ion-item>
+    <ion-item>
+        <ion-label>Start Date and Time</ion-label>
+        <ion-input type="datetime-local" [(ngModel)]="Event.start"></ion-input>      
+    </ion-item>
+    <ion-item>
+        <ion-label>End Date and Time</ion-label>
+        <ion-input type="datetime-local" [(ngModel)]="Event.end"></ion-input>      
+    </ion-item>
+    <ion-item>
+        <ion-label>Description</ion-label>
+        <ion-textarea [(ngModel)]="Event.description"></ion-textarea>
+    </ion-item>
+    <ion-item>
+        <ion-label>Tag</ion-label>
+        <ion-textarea [(ngModel)]="Event.tag"></ion-textarea>
+    </ion-item>
+    <button ion-button round full large class="round-buttons" (click)="addEvent()">Save</button>
+</ion-content>
