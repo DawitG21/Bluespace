@@ -11,7 +11,7 @@ This project was generated with [Ionic CLI](https://ionicframework.com/docs/cli/
 
 Start the server using command -  `ionic serve(for browser view)` or `ionic lab(for mobile view)`.
 
-## Steps to setup blueSpace Ap
+## Steps to setup blueSpace App
 
 1. Open the downloaded blueSpace app folder
 2. Install node_modules package e.g `npm -i`
